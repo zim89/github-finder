@@ -29,7 +29,7 @@ const HomePage = () => {
   };
 
   return (
-    <div className='mx-auto flex h-screen max-w-5xl justify-center pt-10'>
+    <div className='mx-auto flex max-w-5xl justify-center pt-10'>
       {isError && (
         <p className='text-center text-red-600'>Something went wrong...</p>
       )}
