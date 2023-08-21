@@ -1,7 +1,16 @@
+import { Route, Routes } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import FavouritesPage from './pages/FavouritesPage';
+import Navigation from './components/Navigation';
+
 const App = () => {
   return (
     <>
-      <h1 className='text-red-500'>Halo REACT</h1>
+      <Navigation />
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/favourites' element={<FavouritesPage />} />
+      </Routes>
     </>
   );
 };
